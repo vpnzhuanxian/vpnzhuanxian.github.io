@@ -1,4 +1,4 @@
-# VPN专线 | 3月11日21.7M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点机场分享  更新时间 2025-03-11 14:09:10
+# VPN专线 | 3月11日19.8M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点机场分享  更新时间 2025-03-11 14:16:00
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnzhuanxian.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
