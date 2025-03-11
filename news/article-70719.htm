@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnzhuanxian.github.io/news/article-70719.htm" />
+    <title>vue项目实现webpack配置代理,解决跨域问题_vue.js</title>
+        <meta name="description" content="目录  webpack配置代理,解决跨域  主要是这句话  vue跨域问题,修改代理后仍404  接口请求用法     webpack配置代理,解决跨域 在config文件夹中的index.js文件配" />
+    
+    <meta name="author" content="VPN专线 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnzhuanxian.github.io/news/article-70719.htm" />
+    <meta property="og:site_name" content="VPN专线 订阅机场节点中文网" />
+    <meta property="og:title" content="vue项目实现webpack配置代理,解决跨域问题_vue.js" />
+    <meta property="og:image" content="https://vpnzhuanxian.github.io/uploads/20250201/c354e0ad70cf5ba0d76dbcd96fd47cf1.webp" />
+        <meta property="og:release_date" content="2025-03-10T04:35:31" />
+    <meta property="og:updated_time" content="2025-03-10T04:35:31" />
+        <meta property="og:description" content="目录  webpack配置代理,解决跨域  主要是这句话  vue跨域问题,修改代理后仍404  接口请求用法     webpack配置代理,解决跨域 在config文件夹中的index.js文件配" />
+        
+    <link href="/assets/website/css/clashv2rayfree/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/assets/website/css/clashv2rayfree/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/website/img/clashv2rayfree/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--google fonts-->
+    <script src="/assets/website/js/frontend/clashv2rayfree/jquery-1.11.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashv2rayfree/bootstrap.min.js"></script>
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="vue项目实现webpack配置代理,解决跨域问题_vue.js">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DEDMWHR2YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DEDMWHR2YW');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--header-top start here-->
+    <div class="top-header">
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+    <!-- NAVBAR
+		================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                                                <a class="navbar-brand" href="/">VPN专线</a>
+                                                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav">
+                                                                        <li>
+                                        <a href="/">首页</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/free-nodes/">免费节点</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/paid-subscribe/">推荐机场</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/client.htm">客户端</a>
+                                    </li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </nav>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <!--about strat here-->
+    <div class="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ol class="breadcrumb">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/news/">新闻资讯</a></li>
+                          <li class="active">正文</li>
+                        </ol>
+                        <div class="about-top">
+                            <h1>vue项目实现webpack配置代理,解决跨域问题_vue.js</h1>
+                        </div>
+                        <div class="about-bottom">
+                                            <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				<div id="navCategory"> <h5 class="catalogue">目录</h5> <ul class="first_class_ul"> <li><a href="#_label0" rel="nofollow">webpack配置代理,解决跨域</a></li> <ul class="second_class_ul"> <li><a href="#_lab2_0_0" rel="nofollow">主要是这句话</a></li> </ul> <li><a href="#_label1" rel="nofollow">vue跨域问题,修改代理后仍404</a></li> <ul class="second_class_ul"> <li><a href="#_lab2_1_1" rel="nofollow">接口请求用法</a></li> </ul> </ul> </div> <p class="maodian"><a name="_label0" rel="nofollow"></a></p> <h2>webpack配置代理,解决跨域</h2> <p>在config文件夹中的index.js文件配置</p> <p class="maodian"><a name="_lab2_0_0" rel="nofollow"></a></p> <h3>主要是这句话</h3> <div class="ay1code"> <pre class="brush:js;">proxyTable: { //本地测试接口        '/': {           target: 'http://xx.xx.xx.xx',           changeOrigin: true,           secure: false       }   },</pre> </div> <p>​示例代码：</p> <div class="ay1code"> <pre class="brush:js;">  module.exports = {    dev: {         // Paths      assetsSubDirectory: 'static',      assetsPublicPath: '/',      proxyTable: { //本地测试接口        '/': {           target: 'http://xx.xx.xx.xx',           changeOrigin: true,           secure: false         }       },         // Various Dev Server settings      host: 'localhost', // can be overwritten by process.env.HOST      port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined      autoOpenBrowser: false,      errorOverlay: true,      notifyOnErrors: true,      poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-          /**       * Source Maps       */         // https://webpack.js.org/configuration/devtool/#development      devtool: 'cheap-module-eval-source-map',         // If you have problems debugging vue-files in devtools,      // set this to false - it *may* help      // https://vue-loader.vuejs.org/en/options.html#cachebusting      cacheBusting: true,       cssSourceMap: true    },       build: {      // Template for index.html      index: path.resolve(__dirname, '../dist/index.html'),         // Paths      assetsRoot: path.resolve(__dirname, '../dist'),      assetsSubDirectory: 'static',      assetsPublicPath: '/',         /**       * Source Maps       */         productionSourceMap: true,      // https://webpack.js.org/configuration/devtool/#production      devtool: '#source-map',         // Gzip off by default as many popular static hosts such as      // Surge or Netlify already gzip all static assets for you.      // Before setting to `true`, make sure to:      // npm install --save-dev compression-webpack-plugin      productionGzip: false,      productionGzipExtensions: ['js', 'css'],         // Run the build command with an extra argument to      // View the bundle analyzer report after build finishes:      // `npm run build --report`      // Set to `true` or `false` to always turn it on or off      bundleAnalyzerReport: process.env.npm_config_report    }  }     ​</pre> </div> <p class="maodian"><a name="_label1" rel="nofollow"></a></p> <h2>vue跨域问题,修改代理后仍404</h2> <p>首先确认安装了axios，安装方法：cnpm install axios -S或者不用镜像npm install axios</p> <p style="text-align:center"><img decoding="async" alt="在这里插入图片描述" src="http://img.555519.xyz/uploads3/20220419/6b8082605b210ecf4c7d4155fd0e683a.jpg"></p> <p><strong>dev: {undefined</strong></p> <div class="ay1code"> <pre class="brush:js;">// Paths  assetsSubDirectory: 'static',  assetsPublicPath: '/',  proxyTable: {    '/api': {      target: 'http://40.73.37.92:8090/',//设置你调用的接口域名和端口号 别忘了加http      changeOrigin: true,      pathRewrite: {        '^/api': ''//这里理解成用‘/api'代替target里面的地址，后面组件中我们掉接口时直接用api代替 比如我要调用'http://40.00.100.100:3002/user/add'，直接写‘/api/user/add'即可      }    }  },  </pre>                 <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-70087.htm">宠物培训师学校（宠物培训师学校大连）</a></p>
+                                        <p>下一个：<a href="/news/article-70720.htm">动物疫苗接种间隔时间短有什么危害嘛知乎（动物疫苗管多久）</a></p>
+                                    </div>
+                                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-70086.htm" title="买兽药哪个网站是正品便宜 买兽药哪个网站是正品便宜宠物">买兽药哪个网站是正品便宜 买兽药哪个网站是正品便宜宠物</a></li>
+                        <li class="py-2"><a href="/news/article-66247.htm" title="动物疫苗批号查询网站入口 动物疫苗批号查询网站入口官网">动物疫苗批号查询网站入口 动物疫苗批号查询网站入口官网</a></li>
+                        <li class="py-2"><a href="/news/article-71384.htm" title="SpringBoot 使用 Feign进行远程调用、文件上传等操作">SpringBoot 使用 Feign进行远程调用、文件上传等操作</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-11-node-share.htm" title="VPN专线 | 3月11日19.1M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享">VPN专线 | 3月11日19.1M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-71386.htm" title="宠物的领养协议是有法律保护的吗为什么没有 宠物的领养协议是有法律保护的吗为什么没有">宠物的领养协议是有法律保护的吗为什么没有 宠物的领养协议是有法律保护的吗为什么没有</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-5-free-node-subscribe-links.htm" title="VPN专线 | 3月5日21M/S|免费V2ray/Shadowrocket/SSR/Clash免费节点订阅分享">VPN专线 | 3月5日21M/S|免费V2ray/Shadowrocket/SSR/Clash免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-66245.htm" title="Hbase基础（特点、架构、应用场景、集群搭建、HA设计）这一篇就够了">Hbase基础（特点、架构、应用场景、集群搭建、HA设计）这一篇就够了</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-3-free-subscribe-node.htm" title="VPN专线 | 3月3日19M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享">VPN专线 | 3月3日19M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-66137.htm" title="天津宠物领养救助中心在哪 天津宠物领养救助中心在哪里">天津宠物领养救助中心在哪 天津宠物领养救助中心在哪里</a></li>
+                        <li class="py-2"><a href="/news/article-69428.htm" title="2021公务员国考报名时间和考试时间表（2021年公务员国考报名时间和考试时间）">2021公务员国考报名时间和考试时间表（2021年公务员国考报名时间和考试时间）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about end here-->
+        <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                            <p>
+                                <a href="/">首页</a> | 
+                                <a href="/free-node/">免费节点</a> | 
+                                <a href="/news/">新闻资讯</a> |
+                                <a href="/about-us.htm">关于我们</a> |
+                                <a href="/disclaimer.htm">免责申明</a> |
+                                <a href="/privacy.htm">隐私申明</a> |
+                                <a href="/sitemap.xml">网站地图</a>
+                            </p>
+                <p>
+                    VPN专线 订阅机场节点中文网 版权所有
+                    <br />
+                    Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
