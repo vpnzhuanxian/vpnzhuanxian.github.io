@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnzhuanxian.github.io/news/article-79485.htm" />
+    <title>windows 使用pyenv-win 管理多python 版本</title>
+        <meta name="description" content="&nbsp;链接：GitHub - pyenv-win/pyenv-win: pyenv for Windows. pyenv is a simple python version managemen" />
+    
+    <meta name="author" content="VPN专线 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnzhuanxian.github.io/news/article-79485.htm" />
+    <meta property="og:site_name" content="VPN专线 订阅机场节点中文网" />
+    <meta property="og:title" content="windows 使用pyenv-win 管理多python 版本" />
+    <meta property="og:image" content="https://vpnzhuanxian.github.io/uploads/20240412/e0209cf7d53a6dfb4548aeadc87a6ef7.webp" />
+        <meta property="og:release_date" content="2025-03-23T08:21:27" />
+    <meta property="og:updated_time" content="2025-03-23T08:21:27" />
+        <meta property="og:description" content="&nbsp;链接：GitHub - pyenv-win/pyenv-win: pyenv for Windows. pyenv is a simple python version managemen" />
+        
+    <link href="/assets/website/css/clashv2rayfree/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/assets/website/css/clashv2rayfree/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/website/img/clashv2rayfree/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--google fonts-->
+    <script src="/assets/website/js/frontend/clashv2rayfree/jquery-1.11.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashv2rayfree/bootstrap.min.js"></script>
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="windows 使用pyenv-win 管理多python 版本">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DEDMWHR2YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DEDMWHR2YW');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--header-top start here-->
+    <div class="top-header">
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+    <!-- NAVBAR
+		================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                                                <a class="navbar-brand" href="/">VPN专线</a>
+                                                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav">
+                                                                        <li>
+                                        <a href="/">首页</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/free-nodes/">免费节点</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/paid-subscribe/">推荐机场</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/client.htm">客户端</a>
+                                    </li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </nav>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <!--about strat here-->
+    <div class="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ol class="breadcrumb">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/news/">新闻资讯</a></li>
+                          <li class="active">正文</li>
+                        </ol>
+                        <div class="about-top">
+                            <h1>windows 使用pyenv-win 管理多python 版本</h1>
+                        </div>
+                        <div class="about-bottom">
+                                            <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				<div id="content_views" class="htmledit_views"> <p>&nbsp;链接：<a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://github.com/pyenv-win/pyenv-win"  title="GitHub - pyenv-win/pyenv-win: pyenv for Windows. pyenv is a simple python version management tool. It lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well." rel="nofollow">GitHub - pyenv-win/pyenv-win: pyenv for Windows. pyenv is a simple python version management tool. It lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.</a></p> <h2>简介</h2> <p>&nbsp; &nbsp; &nbsp; &nbsp; pyenv-win 是windows 下的一个python 多版本管理工具。</p> <h2>使用</h2> <table border="1" cellpadding="1" cellspacing="1" style="width:500px;"> <tbody> <tr> <td style="width:216px;"> <pre style="text-align:center;">命令</pre> </td> <td style="text-align:center;width:282px;">用法</td> </tr> <tr> <td style="text-align:center;width:216px;">local</td> <td style="text-align:center;width:282px;">&nbsp;Set or show the local application-specific Python version</td> </tr> <tr> <td style="text-align:center;width:216px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; global</td> <td style="text-align:center;width:282px;">&nbsp;Set or show the global Python version</td> </tr> <tr> <td style="text-align:center;width:216px;">shell</td> <td style="text-align:center;width:282px;">&nbsp; Set or show the shell-specific Python version</td> </tr> <tr> <td style="text-align:center;width:216px;">install</td> <td style="text-align:center;width:282px;">&nbsp; Install 1 or more versions of Python</td> </tr> <tr> <td style="text-align:center;width:216px;">uninstall</td> <td style="text-align:center;width:282px;">&nbsp;Uninstall 1 or more versions of Python</td> </tr> <tr> <td style="text-align:center;width:216px;">update</td> <td style="text-align:center;width:282px;">Update the cached version DB</td> </tr> <tr> <td style="text-align:center;width:216px;">rehash</td> <td style="text-align:center;width:282px;">Rehash pyenv shims (run this after switching Python versions)</td> </tr> <tr> <td style="text-align:center;width:216px;">vname</td> <td style="text-align:center;width:282px;">Show the current Python version</td> </tr> <tr> <td style="text-align:center;width:216px;">version</td> <td style="text-align:center;width:282px;">&nbsp;Show the current Python version and its origin</td> </tr> <tr> <td style="text-align:center;width:216px;">version-name</td> <td style="text-align:center;width:282px;">Show the current Python version</td> </tr> <tr> <td style="text-align:center;width:216px;">versions</td> <td style="text-align:center;width:282px;">List all Python versions available to pyenv</td> </tr> <tr> <td style="text-align:center;width:216px;">exec</td> <td style="text-align:center;width:282px;">&nbsp; Runs an executable by first preparing PATH so that the selected Python</td> </tr> <tr> <td style="text-align:center;width:216px;">which</td> <td style="text-align:center;width:282px;">&nbsp;Display the full path to an executable</td> </tr> <tr> <td style="text-align:center;width:216px;">whence</td> <td style="text-align:center;width:282px;">&nbsp;List all Python versions that contain the given executable</td> </tr> </tbody> </table> <h2>下载</h2> <p>一. windows terminal</p> <p>windows shell 使用 powershell 。&nbsp; 直接Microsoft Store 搜索 windows terminal 。 点击下载安装即可。</p> <p>二. 通过pip下载 pyenv-win</p> <p>首先下载一个python 版本。<a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://www.python.org/downloads/windows/"  title="https://www.python.org/downloads/windows/" rel="nofollow">https://www.python.org/downloads/windows/</a>&nbsp;。下载后点击安装</p> <p>然后在python 的bin 目录里面执行&nbsp;pip install pyenv-win --target [your path where&nbsp; to store pyenv]</p> <p>三. 为 pyenv 配置系统变量</p> <p>操作 过程： 1.【此电脑】&nbsp; -&gt; 【属性】-&gt; 【高级系统设置】-&gt; 【环境变量】（以下操作更改的都是系统变量）-&gt; 【系统变量】-&gt; 【新建变量】</p> <p style="text-align:center;"><img decoding="async" alt="" src="http://img.555519.xyz/uploads3/20220905/5a376ce4b84c3d365eb65ed6bec053d4.jpg"></p> <p>2. 【双击系统变量的path】 -&gt; 【新建】</p> <p style="text-align:center;"> <p><img decoding="async" alt="" src="http://img.555519.xyz/uploads3/20220905/bd309ed844c375d9a9c46b0bd3192789.jpg"></p> <h2>测试</h2> <p>&nbsp; &nbsp; &nbsp; &nbsp; 重启当前 cmd 或 powershell。&nbsp; 执行 pyenv --version ,能输出版本号即配置成功。如果有错误，再检查一遍有没有遗漏或拼写错误。</p> <h2>PS : powershell 执行pyenv 可能有个问题</h2> <blockquote> <p>无法加载文件 C:\Users\DH\Desktop\cs\rename.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。</p> </blockquote> <p>此时 执行下<strong>set-executionpolicy remotesigned 。 再重新执行命令即可。</strong></p> <p><strong>具体看：</strong><a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://www.jianshu.com/p/4eaad2163567"  title="PowerShell：因为在此系统上禁止运行脚本，解决方法 - 简书" rel="nofollow">PowerShell：因为在此系统上禁止运行脚本，解决方法 - 简书</a></p> <p style="text-align:center;"> <p style="text-align:center;"> <p style="text-align:center;"> <p style="text-align:center;"> </div> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-79484.htm">Java中Stack.peek()与Stack.pop()与Queue.poll的区别</a></p>
+                                        <p>下一个：<a href="/news/article-80149.htm">宠物领养数据图片大全大图（宠物领养百度百科）</a></p>
+                                    </div>
+                                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-66136.htm" title="Spring Security OAuth 笔记">Spring Security OAuth 笔记</a></li>
+                        <li class="py-2"><a href="/news/article-73367.htm" title="Kotlin的标准函数和静态方法">Kotlin的标准函数和静态方法</a></li>
+                        <li class="py-2"><a href="/news/article-74723.htm" title="动物医院看病流程视频（动物医院看病贵吗）">动物医院看病流程视频（动物医院看病贵吗）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-8-clash-v2ray-ss-ssr.htm" title="VPN专线 | 3月8日19.6M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享">VPN专线 | 3月8日19.6M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-12-free-node-subscribe-links.htm" title="VPN专线 | 3月12日21.8M/S|免费V2ray/SSR/Clash/Shadowrocket免费节点机场分享">VPN专线 | 3月12日21.8M/S|免费V2ray/SSR/Clash/Shadowrocket免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/news/article-66245.htm" title="Hbase基础（特点、架构、应用场景、集群搭建、HA设计）这一篇就够了">Hbase基础（特点、架构、应用场景、集群搭建、HA设计）这一篇就够了</a></li>
+                        <li class="py-2"><a href="/news/article-71384.htm" title="SpringBoot 使用 Feign进行远程调用、文件上传等操作">SpringBoot 使用 Feign进行远程调用、文件上传等操作</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-7-free-node-subscribe-links.htm" title="VPN专线 | 3月7日18M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享">VPN专线 | 3月7日18M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-69428.htm" title="2021公务员国考报名时间和考试时间表（2021年公务员国考报名时间和考试时间）">2021公务员国考报名时间和考试时间表（2021年公务员国考报名时间和考试时间）</a></li>
+                        <li class="py-2"><a href="/news/article-66247.htm" title="动物疫苗批号查询网站入口 动物疫苗批号查询网站入口官网">动物疫苗批号查询网站入口 动物疫苗批号查询网站入口官网</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">69</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about end here-->
+        <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                            <p>
+                                <a href="/">首页</a> | 
+                                <a href="/free-node/">免费节点</a> | 
+                                <a href="/news/">新闻资讯</a> |
+                                <a href="/about-us.htm">关于我们</a> |
+                                <a href="/disclaimer.htm">免责申明</a> |
+                                <a href="/privacy.htm">隐私申明</a> |
+                                <a href="/sitemap.xml">网站地图</a>
+                            </p>
+                <p>
+                    VPN专线 订阅机场节点中文网 版权所有
+                    <br />
+                    Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
