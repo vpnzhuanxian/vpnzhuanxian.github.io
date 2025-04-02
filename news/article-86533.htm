@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnzhuanxian.github.io/news/article-86533.htm" />
+    <title>Element UI Upload 上传文件只能上传一次 ，再次点击上传后无反应的问题</title>
+        <meta name="description" content="Element UI Upload 上传文件上传文件一次 ，不论是上传成功之后修改文件再上传还是上传失败重新上传，再次点击上传均无反应。 方法一：利用 :on-success  ref=‘upload" />
+    
+    <meta name="author" content="VPN专线 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnzhuanxian.github.io/news/article-86533.htm" />
+    <meta property="og:site_name" content="VPN专线 订阅机场节点中文网" />
+    <meta property="og:title" content="Element UI Upload 上传文件只能上传一次 ，再次点击上传后无反应的问题" />
+    <meta property="og:image" content="https://vpnzhuanxian.github.io/uploads/20240412/f0e6f7db4768aee5a26fe36a51bbb22e.webp" />
+        <meta property="og:release_date" content="2025-04-02T07:43:11" />
+    <meta property="og:updated_time" content="2025-04-02T07:43:11" />
+        <meta property="og:description" content="Element UI Upload 上传文件上传文件一次 ，不论是上传成功之后修改文件再上传还是上传失败重新上传，再次点击上传均无反应。 方法一：利用 :on-success  ref=‘upload" />
+        
+    <link href="/assets/website/css/clashv2rayfree/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/assets/website/css/clashv2rayfree/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/website/img/clashv2rayfree/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--google fonts-->
+    <script src="/assets/website/js/frontend/clashv2rayfree/jquery-1.11.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashv2rayfree/bootstrap.min.js"></script>
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Element UI Upload 上传文件只能上传一次 ，再次点击上传后无反应的问题">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DEDMWHR2YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DEDMWHR2YW');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--header-top start here-->
+    <div class="top-header">
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+    <!-- NAVBAR
+		================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                                                <a class="navbar-brand" href="/">VPN专线</a>
+                                                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav">
+                                                                        <li>
+                                        <a href="/">首页</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/free-nodes/">免费节点</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/paid-subscribe/">推荐机场</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/client.htm">客户端</a>
+                                    </li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </nav>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <!--about strat here-->
+    <div class="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ol class="breadcrumb">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/news/">新闻资讯</a></li>
+                          <li class="active">正文</li>
+                        </ol>
+                        <div class="about-top">
+                            <h1>Element UI Upload 上传文件只能上传一次 ，再次点击上传后无反应的问题</h1>
+                        </div>
+                        <div class="about-bottom">
+                                            <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				<div id="content_views" class="markdown_views prism-atom-one-dark"> <pre><code>Element UI Upload 上传文件上传文件一次 ，不论是上传成功之后修改文件再上传还是上传失败重新上传，再次点击上传均无反应。</code></pre> <h2><a id="_onsuccess_2" rel="nofollow"></a>方法一：利用 :on-success</h2> <blockquote> <p>ref=‘upload’<br /> :on-success=“handleSuccess”</p> </blockquote> <p>注意：<code>ref='upload</code> 一定要加上ref 不然不起作用</p> <pre><code>                &lt;el-upload                         class="upload-demo"                         action=""                         :limit="1"                         :show-file-list="false"                         :http-request="uploadLogo"                         ref='upload'                         :on-success="handleSuccess"                 &gt;                     &lt;el-button style="width: 150px; height: 35px;line-height: 0;margin-left: 20px" size="medium"                                type="primary"&gt;                         {<!-- -->{$t('StaffManage.bulkImport')}}                     &lt;/el-button&gt;                 &lt;/el-upload&gt;</code></pre> <pre><code>        handleSuccess(res, file) {             this.$refs.upload.clearFiles(); //上传成功之后清除历史记录             // this.tableReload()         },</code></pre> <h2><a id="if_elupload_32" rel="nofollow"></a>方法二：利用if el-upload让移除文档流</h2> <pre><code class="prism language-bash"><span class="token operator">&lt;</span>el-upload                         v-if<span class="token operator">=</span><span class="token string">"!form.contractFileUrl"</span><span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">"upload-demo"</span><span class="token assign-left variable">action</span><span class="token operator">=</span><span class="token string">""</span>                         :limit<span class="token operator">=</span><span class="token string">"1"</span>                         :show-file-list<span class="token operator">=</span><span class="token string">"false"</span>                         :http-request<span class="token operator">=</span><span class="token string">"uploadLogo"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>el-button<span class="token assign-left variable">size</span><span class="token operator">=</span><span class="token string">"medium"</span><span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">"primary"</span><span class="token operator">&gt;</span><span class="token punctuation">{<!-- --></span><span class="token punctuation">{<!-- --></span><span class="token variable">$t</span><span class="token punctuation">(</span><span class="token string">'AttendanceInformation.ClickUpload'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>/el-button<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/el-upload<span class="token operator">&gt;</span></code></pre> <pre><code class="prism language-bash">            uploadLogo<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">{<!-- --></span><span class="token builtin class-name">let</span> _this<span class="token operator">=</span> this                 _this.form.contractFileUrl<span class="token operator">=</span><span class="token string">'1'</span><span class="token builtin class-name">let</span> formData<span class="token operator">=</span> new FormData<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                 formData.append<span class="token punctuation">(</span><span class="token string">"file"</span>, param.file<span class="token punctuation">)</span><span class="token punctuation">;</span>                 _this.<span class="token variable">$send</span>.post<span class="token punctuation">(</span><span class="token punctuation">{<!-- --></span>url:<span class="token string">'/contract/upload'</span>, data: formData<span class="token punctuation">}</span>, res<span class="token operator">=</span><span class="token operator">&gt;</span><span class="token punctuation">{<!-- --></span><span class="token keyword">if</span><span class="token punctuation">(</span>res.code<span class="token operator">==</span><span class="token operator">=</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">{<!-- --></span>                         _this.isdisabled<span class="token operator">=</span><span class="token boolean">true</span>                         _this.form.contractFileUrl<span class="token operator">=</span> res.data.url                         _this.form.contractFileId<span class="token operator">=</span> res.data.id<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{<!-- --></span>                         _this.form.contractFileUrl<span class="token operator">=</span> null                         _this.form.contractFileId<span class="token operator">=</span> null                         _this.<span class="token variable">$msg</span>.error<span class="token punctuation">(</span>res.message<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span>,</code></pre> </div> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-85824.htm">宠物免费领养绑定消费（宠物免费领养是真的吗）</a></p>
+                                        <p>下一个：<a href="/news/article-86534.htm">狗粮生产成本最低（狗粮生产赚钱吗）</a></p>
+                                    </div>
+                                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-76736.htm" title="宠物领养协议具有法律效应吗知乎怎么写 宠物领养协议具有法律效应吗知乎怎么写">宠物领养协议具有法律效应吗知乎怎么写 宠物领养协议具有法律效应吗知乎怎么写</a></li>
+                        <li class="py-2"><a href="/news/article-75387.htm" title="狗粮加工企业有哪些企业（狗粮制造厂）">狗粮加工企业有哪些企业（狗粮制造厂）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-30-node-share-links.htm" title="VPN专线 | 3月30日19.7M/S|免费Clash/V2ray/Shadowrocket/SSR免费节点机场分享">VPN专线 | 3月30日19.7M/S|免费Clash/V2ray/Shadowrocket/SSR免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-27-clash-v2ray-ss-ssr.htm" title="VPN专线 | 3月27日21.9M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点机场分享">VPN专线 | 3月27日21.9M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/news/article-72704.htm" title="使用Echarts3实现动态折线图">使用Echarts3实现动态折线图</a></li>
+                        <li class="py-2"><a href="/news/article-80878.htm" title="动物诊疗许可证是什么事项类别（动物诊疗许可证是什么事项类别的）">动物诊疗许可证是什么事项类别（动物诊疗许可证是什么事项类别的）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-4-free-v2ray-subscribe.htm" title="VPN专线 | 3月4日22.6M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享">VPN专线 | 3月4日22.6M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-68777.htm" title="广州市哪里可以领养宠物（广州领养宠物在哪里）">广州市哪里可以领养宠物（广州领养宠物在哪里）</a></li>
+                        <li class="py-2"><a href="/news/article-78779.htm" title="猫科医生在线咨询（猫科的医生）">猫科医生在线咨询（猫科的医生）</a></li>
+                        <li class="py-2"><a href="/news/article-78111.htm" title="动物疫苗注射后多久产生抗体呢知乎 动物疫苗注射后多久产生抗体呢知乎">动物疫苗注射后多久产生抗体呢知乎 动物疫苗注射后多久产生抗体呢知乎</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">89</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about end here-->
+        <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                            <p>
+                                <a href="/">首页</a> | 
+                                <a href="/free-node/">免费节点</a> | 
+                                <a href="/news/">新闻资讯</a> |
+                                <a href="/about-us.htm">关于我们</a> |
+                                <a href="/disclaimer.htm">免责申明</a> |
+                                <a href="/privacy.htm">隐私申明</a> |
+                                <a href="/sitemap.xml">网站地图</a>
+                            </p>
+                <p>
+                    VPN专线 订阅机场节点中文网 版权所有
+                    <br />
+                    Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
