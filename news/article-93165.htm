@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnzhuanxian.github.io/news/article-93165.htm" />
+    <title>适合初学者的C语言常量类型的讲解_C 语言_</title>
+        <meta name="description" content="目录  常量的定义 常量的分类  字面常量 const修饰的常变量 #define 定义的标识符常量 枚举常量    生活中有一些是可变的量（比如你的年龄，身高，体重，对象） 还有一些不变的量（比如圆" />
+    
+    <meta name="author" content="VPN专线 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnzhuanxian.github.io/news/article-93165.htm" />
+    <meta property="og:site_name" content="VPN专线 订阅机场节点中文网" />
+    <meta property="og:title" content="适合初学者的C语言常量类型的讲解_C 语言_" />
+    <meta property="og:image" content="https://vpnzhuanxian.github.io/uploads/20240412/dd1a69f2603911b1df7ac0b848942804.webp" />
+        <meta property="og:release_date" content="2025-04-11T08:56:34" />
+    <meta property="og:updated_time" content="2025-04-11T08:56:34" />
+        <meta property="og:description" content="目录  常量的定义 常量的分类  字面常量 const修饰的常变量 #define 定义的标识符常量 枚举常量    生活中有一些是可变的量（比如你的年龄，身高，体重，对象） 还有一些不变的量（比如圆" />
+        
+    <link href="/assets/website/css/clashv2rayfree/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/assets/website/css/clashv2rayfree/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/website/img/clashv2rayfree/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--google fonts-->
+    <script src="/assets/website/js/frontend/clashv2rayfree/jquery-1.11.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashv2rayfree/bootstrap.min.js"></script>
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="适合初学者的C语言常量类型的讲解_C 语言_">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DEDMWHR2YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DEDMWHR2YW');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--header-top start here-->
+    <div class="top-header">
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+    <!-- NAVBAR
+		================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                                                <a class="navbar-brand" href="/">VPN专线</a>
+                                                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav">
+                                                                        <li>
+                                        <a href="/">首页</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/free-nodes/">免费节点</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/paid-subscribe/">推荐机场</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/client.htm">客户端</a>
+                                    </li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </nav>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <!--about strat here-->
+    <div class="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ol class="breadcrumb">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/news/">新闻资讯</a></li>
+                          <li class="active">正文</li>
+                        </ol>
+                        <div class="about-top">
+                            <h1>适合初学者的C语言常量类型的讲解_C 语言_</h1>
+                        </div>
+                        <div class="about-bottom">
+                                            <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				<div id="navCategory"> <h5 class="catalogue">目录</h5> <ul class="first_class_ul"> <li><a href="#_label0" rel="nofollow">常量的定义</a></li> <li><a href="#_label1" rel="nofollow">常量的分类</a></li> <ul class="second_class_ul"> <li><a href="#_lab2_1_0" rel="nofollow">字面常量</a></li> <li><a href="#_lab2_1_1" rel="nofollow">const修饰的常变量</a></li> <li><a href="#_lab2_1_2" rel="nofollow">#define 定义的标识符常量</a></li> <li><a href="#_lab2_1_3" rel="nofollow">枚举常量</a></li> </ul> </ul> </div> <p>生活中有一些是可变的量（比如你的年龄，身高，体重，对象）</p> <p>还有一些不变的量（比如圆周率，性别，身份证号码）[哎，这里你说性别可变啊，我们只能笑一下，哈哈]</p> <p class="maodian"><a name="_label0" rel="nofollow"></a></p> <h2>常量的定义</h2> <p>常量就是一个不变的量（比如圆周率，性别，身份证号码）</p> <p>C语言中的常量和变量的定义的形式有所差异。</p> <p class="maodian"><a name="_label1" rel="nofollow"></a></p> <h2>常量的分类</h2> <p>C语言中的常量分为以下以下几种：</p> <ul> <li>1.字面常量</li> <li>2.const 修饰的常变量</li> <li>3.#define 定义的标识符常量</li> <li>4.枚举常量</li> </ul> <p>我们来演示一下</p> <p class="maodian"><a name="_lab2_1_0" rel="nofollow"></a></p> <h3>字面常量</h3> <p>字面常量，就是字面上就可以看出来的常量</p> <div class="ay1code"> <pre class="brush:cpp;">int main()  {      //字面常量演示      3.14;//小数      1000;//整数      'w';//字符      "abc";字符串         return 0;  }  </pre> </div> <p class="maodian"><a name="_lab2_1_1" rel="nofollow"></a></p> <h3>const修饰的常变量</h3> <div class="ay1code"> <pre class="brush:cpp;">#define _CRT_SECURE_NO_WARNINGS    #include&lt;stdio.h&gt;//使用printf记得加这条代码    int main()  {      //const修饰的常变量演示     int a=100;//我们等一会儿会改变它     a=10;     printf("%d",a);     return 0;  }  </pre> </div> <p>运行结果：</p> <blockquote> <p>10</p> </blockquote> <p style="text-align:center"><img decoding="async" alt="请添加图片描述" src="http://img.555519.xyz/uploads3/20220419/9144518c0c5ed0450ea0fa9c5bd0f35b.jpg"></p> <p>当我们在int a=100前加一个const来修饰</p> <div class="ay1code"> <pre class="brush:cpp;">#define _CRT_SECURE_NO_WARNINGS    #include&lt;stdio.h&gt;    int main()  {      //const修饰的常变量演示     const int a=100;//在这儿     a=10;     printf("%d",a);     return 0;  }  </pre> </div> <p>运行的结果：</p> <p>运行错误，无实际输出</p> <p style="text-align:center"><img decoding="async" alt="请添加图片描述" src="http://img.555519.xyz/uploads3/20220419/5a42a2220bd19d356fd2fe8f42ce662c.jpg"></p> <p>我们可以知道，const如果修饰一个变量，再给变量换一个值是不被允许的，相当于一个常量，但它还有变量的属性，所以我们就叫它是const 修饰的常变量</p> <p>为什么说它具有变量属性呢？</p> <p>我们来证明一下：</p> <p>再新了解一个东西，数组，当我们来写代码的时候，有时候需要写很多的变量，很麻烦，这时候我们使用数组arr[ ]，（a[ ],hin[ ]都随便，自己起一个名），在数组的[ ]中只能放常量，比如arr[5],相当于你直接定义了5个变量，里面是不能放变量的，根据这个原理我们来证明一下const 修饰的常变量是否具有变量属性</p> <div class="ay1code"> <pre class="brush:cpp;">#define _CRT_SECURE_NO_WARNINGS    #include&lt;stdio.h&gt;    int main()  {  	const int a = 100;  	int arr[10] = {0};  	return 0;  }  </pre> </div> <p>可正常运行</p> <div class="ay1code"> <pre class="brush:cpp;">#define _CRT_SECURE_NO_WARNINGS    #include&lt;stdio.h&gt;    int main()  {  	const int a = 100;  	int arr[a] = {0};  	return 0;  }  </pre> </div> <p>运行结果：</p> <p>出现了错误，说明const 修饰的常变量具有变量属性</p> <p style="text-align:center"><img decoding="async" alt="请添加图片描述" src="http://img.555519.xyz/uploads3/20220419/9ce93d6bd0263b1d55bcd64552e594a5.jpg"></p> <p>我有一个大佬（我认为的大佬，哈哈哈）是这样理解的：假设变量是一个空间，常量是一个实际值，变量用来容纳常量，const只是锁定了值，但是并不是把空间变成数值</p> <p class="maodian"><a name="_lab2_1_2" rel="nofollow"></a></p> <h3>#define 定义的标识符常量</h3> <div class="ay1code"> <pre class="brush:cpp;">#define _CRT_SECURE_NO_WARNINGS    #include&lt;stdio.h&gt;    #define MAX 100//here    int main()  {  printf("%d\n",MAX);  int a=MAX;  printf("%d\n",a);  return 0;  }  </pre> </div> <p>运行的结果：</p> <blockquote> <p>100</p> <p>100</p> </blockquote> <p style="text-align:center"><img decoding="async" alt="请添加图片描述" src="http://img.555519.xyz/uploads3/20220419/d0abdfa0e267c4237bf633efe9a647b3.jpg"></p> <p>可以看出来，MAX被定义为了100，无论是直接打印还是给变量一个值都可以，想用的时候就可以拿出来使用，这个MAX就是标识符常量，也就是#define 定义的标识符常量。（#define也是可以定义一个字符串的，不局限于数字）</p> <p class="maodian"><a name="_lab2_1_3" rel="nofollow"></a></p> <h3>枚举常量</h3> <p>我生活中一些值是可以一一列举出来的，比如性别，我们初步来了解一下，毕竟只是初始c语言，</p> <div class="ay1code"> <pre class="brush:cpp;">#include &lt;stdio.h&gt;    enum Sex  {      MALE,//男      FEMALE,//女      SECRET//不确定  };  //enum Sex未来的可能取值就是MALE,FEMALE,SECRET，它们三个就是枚举常量    int main()  {      //枚举常量演示      printf("%d\n", MALE);      printf("%d\n", FEMALE);      printf("%d\n", SECRET);      //注：枚举常量的默认是从0开始，依次向下递增1的  </pre> </div> <p>注意，这里enum Sex里面三个枚举常量并不开辟空间，而且也是不能改变的，改变就会报错</p> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-92412.htm">同城宠物狗免费领养 同城宠物狗免费领养电话</a></p>
+                                        <p>下一个：<a href="/news/article-93166.htm">狗粮进货渠道哪里便宜（狗粮进货渠道哪里便宜点）</a></p>
+                                    </div>
+                                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-3-14-clash-v2ray-ss-ssr.htm" title="VPN专线 | 3月14日23M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点机场分享">VPN专线 | 3月14日23M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-11-node-share-links.htm" title="VPN专线 | 4月11日20M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点机场分享">VPN专线 | 4月11日20M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/news/article-73367.htm" title="Kotlin的标准函数和静态方法">Kotlin的标准函数和静态方法</a></li>
+                        <li class="py-2"><a href="/news/article-71386.htm" title="宠物的领养协议是有法律保护的吗为什么没有 宠物的领养协议是有法律保护的吗为什么没有">宠物的领养协议是有法律保护的吗为什么没有 宠物的领养协议是有法律保护的吗为什么没有</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-7-free-node-subscribe-links.htm" title="VPN专线 | 3月7日18M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享">VPN专线 | 3月7日18M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-17-free-v2ray.htm" title="VPN专线 | 3月17日22.1M/S|免费Clash/V2ray/SSR/Shadowrocket免费节点机场分享">VPN专线 | 3月17日22.1M/S|免费Clash/V2ray/SSR/Shadowrocket免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-8-clash-v2ray-ss-ssr.htm" title="VPN专线 | 3月8日19.6M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享">VPN专线 | 3月8日19.6M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-2-node-share.htm" title="VPN专线 | 3月2日18.6M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享">VPN专线 | 3月2日18.6M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-84393.htm" title="宠物美容师学校（宠物美容师学校信阳）">宠物美容师学校（宠物美容师学校信阳）</a></li>
+                        <li class="py-2"><a href="/news/article-72044.htm" title="宠物粮加工厂总投资多少亿（宠物粮加工厂总投资多少亿元）">宠物粮加工厂总投资多少亿（宠物粮加工厂总投资多少亿元）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">39</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">89</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about end here-->
+        <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <p>
+                    VPN专线 订阅机场节点中文网 版权所有
+                    <br />
+                    Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
