@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnzhuanxian.github.io/news/article-100626.htm" />
+    <title>layui form表单动态设置更新下拉框select 复选框checked  单选框radio选中项</title>
+        <meta name="description" content="动态插入后执行form.render(type, filter); 参数type值为表单元素属性； 参数filter为lay-filter的值，意思是更新filter所在容器内全部的表单元素为type" />
+    
+    <meta name="author" content="VPN专线 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnzhuanxian.github.io/news/article-100626.htm" />
+    <meta property="og:site_name" content="VPN专线 订阅机场节点中文网" />
+    <meta property="og:title" content="layui form表单动态设置更新下拉框select 复选框checked  单选框radio选中项" />
+    <meta property="og:image" content="https://vpnzhuanxian.github.io/uploads/20240412/1861f9ed7ecca60749ddb15901abb17e.webp" />
+        <meta property="og:release_date" content="2025-04-21T06:49:37" />
+    <meta property="og:updated_time" content="2025-04-21T06:49:37" />
+        <meta property="og:description" content="动态插入后执行form.render(type, filter); 参数type值为表单元素属性； 参数filter为lay-filter的值，意思是更新filter所在容器内全部的表单元素为type" />
+        
+    <link href="/assets/website/css/clashv2rayfree/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/assets/website/css/clashv2rayfree/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/website/img/clashv2rayfree/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--google fonts-->
+    <script src="/assets/website/js/frontend/clashv2rayfree/jquery-1.11.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashv2rayfree/bootstrap.min.js"></script>
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="layui form表单动态设置更新下拉框select 复选框checked  单选框radio选中项">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DEDMWHR2YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DEDMWHR2YW');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--header-top start here-->
+    <div class="top-header">
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+    <!-- NAVBAR
+		================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                                                <a class="navbar-brand" href="/">VPN专线</a>
+                                                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav">
+                                                                        <li>
+                                        <a href="/">首页</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/free-nodes/">免费节点</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/paid-subscribe/">推荐机场</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/client.htm">客户端</a>
+                                    </li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </nav>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <!--about strat here-->
+    <div class="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ol class="breadcrumb">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/news/">新闻资讯</a></li>
+                          <li class="active">正文</li>
+                        </ol>
+                        <div class="about-top">
+                            <h1>layui form表单动态设置更新下拉框select 复选框checked  单选框radio选中项</h1>
+                        </div>
+                        <div class="about-bottom">
+                                            <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                <div class="xcblog-blog-detail">
+                      				  				  				<div id="content_views" class="htmledit_views"> <p>动态插入后执行<em>form.render(type, filter);</em></p> <p><em>参数type值为表单元素属性；</em></p> <p><em>参数filter为</em>lay-filter的值，意思是更新filter所在容器内全部的表单元素为type的表单状态</p> <p>例：</p> <p>1.通过jquery选择器</p> <p>&nbsp; ①下拉框select选中项</p> <p>&nbsp; $checked('select').val('xx');</p> <p>&nbsp; 设置了select的val值，select下拉框显示的当前选中项依然是默认空选项。</p> <p>&nbsp; 用layui.form.render('select','xxx')重新渲染,才能更新select的选中项。</p> <p>&nbsp; layui.form.render('select'）会更新所有的下拉框，下面两个同理。</p> <p>&nbsp; ② 复选框checkbox选中项</p> <p>&nbsp; $("xx").attr("checked", true);</p> <p>&nbsp; 用layui.form.render('checkbox','xxx')重新渲染;才能更新checked的选中项。</p> <p>&nbsp; ③单选框radio选中项</p> <p>&nbsp; 用layui.form.render('radio'.'xxx')重新渲染;才能更新radio的选中项。</p> </div> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-99877.htm">本地宠物领养机构（宠物领养平台 知乎）</a></p>
+                                        <p>下一个：<a href="/news/article-100627.htm">宠物食品加工厂要投资多少亿元（宠物食品加工厂利润）</a></p>
+                                    </div>
+                                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-88697.htm" title="MSSQL基本语法及实例操作语句_MsSql_">MSSQL基本语法及实例操作语句_MsSql_</a></li>
+                        <li class="py-2"><a href="/news/article-95428.htm" title="动物疫苗生产企业排行（动物疫苗生产企业排行榜最新）">动物疫苗生产企业排行（动物疫苗生产企业排行榜最新）</a></li>
+                        <li class="py-2"><a href="/news/article-68135.htm" title="水产兽医资格证报考条件（水产执业兽医考试条件）">水产兽医资格证报考条件（水产执业兽医考试条件）</a></li>
+                        <li class="py-2"><a href="/news/article-91690.htm" title="动物疫苗产业链分析（动物疫苗行业分析）">动物疫苗产业链分析（动物疫苗行业分析）</a></li>
+                        <li class="py-2"><a href="/news/article-102016.htm" title="广州哪里有宠物领养机构啊多少钱（广州有宠物领养中心）">广州哪里有宠物领养机构啊多少钱（广州有宠物领养中心）</a></li>
+                        <li class="py-2"><a href="/news/article-96907.htm" title="动物疫苗的发展现状和趋势论文（动物疫苗行业分析）">动物疫苗的发展现状和趋势论文（动物疫苗行业分析）</a></li>
+                        <li class="py-2"><a href="/news/article-98371.htm" title="动物医院的发展方向和前景如何（动物医院规模）">动物医院的发展方向和前景如何（动物医院规模）</a></li>
+                        <li class="py-2"><a href="/news/article-102017.htm" title="蜜雪加盟一般多少钱知乎（蜜雪加盟费大概多少钱）">蜜雪加盟一般多少钱知乎（蜜雪加盟费大概多少钱）</a></li>
+                        <li class="py-2"><a href="/news/article-78109.htm" title="动物防疫疫苗种类（动物疫苗的作用）">动物防疫疫苗种类（动物疫苗的作用）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-25-node-share.htm" title="VPN专线 | 3月25日22.3M/S|免费Shadowrocket/SSR/Clash/V2ray免费节点机场分享">VPN专线 | 3月25日22.3M/S|免费Shadowrocket/SSR/Clash/V2ray免费节点机场分享</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">64</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">89</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about end here-->
+        <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <p>
+                    VPN专线 订阅机场节点中文网 版权所有
+                    <br />
+                    Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
