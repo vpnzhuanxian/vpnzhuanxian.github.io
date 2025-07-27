@@ -1,4 +1,4 @@
-# VPN专线 | 7月21日18M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点机场分享  更新时间 2025-07-21 10:55:52
+# VPN专线 | 7月27日18.6M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点机场分享  更新时间 2025-07-27 09:58:13
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnzhuanxian.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnzhuanxian.github.io/uploads/2025/07/0-20250721.yaml
-- https://vpnzhuanxian.github.io/uploads/2025/07/1-20250721.yaml
-- https://vpnzhuanxian.github.io/uploads/2025/07/2-20250721.yaml
-- https://vpnzhuanxian.github.io/uploads/2025/07/3-20250721.yaml
-- https://vpnzhuanxian.github.io/uploads/2025/07/4-20250721.yaml
+- https://vpnzhuanxian.github.io/uploads/2025/07/0-20250727.yaml
+- https://vpnzhuanxian.github.io/uploads/2025/07/1-20250727.yaml
+- https://vpnzhuanxian.github.io/uploads/2025/07/2-20250727.yaml
+- https://vpnzhuanxian.github.io/uploads/2025/07/3-20250727.yaml
+- https://vpnzhuanxian.github.io/uploads/2025/07/4-20250727.yaml
 
 ### V2ray订阅链接
 
-- https://vpnzhuanxian.github.io/uploads/2025/07/0-20250721.txt
-- https://vpnzhuanxian.github.io/uploads/2025/07/1-20250721.txt
-- https://vpnzhuanxian.github.io/uploads/2025/07/2-20250721.txt
-- https://vpnzhuanxian.github.io/uploads/2025/07/3-20250721.txt
-- https://vpnzhuanxian.github.io/uploads/2025/07/4-20250721.txt
+- https://vpnzhuanxian.github.io/uploads/2025/07/0-20250727.txt
+- https://vpnzhuanxian.github.io/uploads/2025/07/1-20250727.txt
+- https://vpnzhuanxian.github.io/uploads/2025/07/2-20250727.txt
+- https://vpnzhuanxian.github.io/uploads/2025/07/3-20250727.txt
+- https://vpnzhuanxian.github.io/uploads/2025/07/4-20250727.txt
 
 ### Sing-box订阅链接
 
-- https://vpnzhuanxian.github.io/uploads/2025/07/20250721.json
+- https://vpnzhuanxian.github.io/uploads/2025/07/20250727.json
 
 ## 更多clash节点订阅 ：
 
