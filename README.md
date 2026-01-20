@@ -1,4 +1,4 @@
-# VPN专线 | 1月12日22.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点免费节点机场分享  更新时间 2026-01-12 09:26:00
+# VPN专线 | 1月20日21.6M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点免费节点机场分享  更新时间 2026-01-20 07:42:16
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnzhuanxian.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnzhuanxian.github.io/uploads/2026/01/0-20260112.yaml
-- https://vpnzhuanxian.github.io/uploads/2026/01/1-20260112.yaml
-- https://vpnzhuanxian.github.io/uploads/2026/01/2-20260112.yaml
-- https://vpnzhuanxian.github.io/uploads/2026/01/3-20260112.yaml
-- https://vpnzhuanxian.github.io/uploads/2026/01/4-20260112.yaml
+- https://vpnzhuanxian.github.io/uploads/2026/01/0-20260120.yaml
+- https://vpnzhuanxian.github.io/uploads/2026/01/1-20260120.yaml
+- https://vpnzhuanxian.github.io/uploads/2026/01/2-20260120.yaml
+- https://vpnzhuanxian.github.io/uploads/2026/01/3-20260120.yaml
+- https://vpnzhuanxian.github.io/uploads/2026/01/4-20260120.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnzhuanxian.github.io/uploads/2026/01/0-20260112.txt
-- https://vpnzhuanxian.github.io/uploads/2026/01/1-20260112.txt
-- https://vpnzhuanxian.github.io/uploads/2026/01/2-20260112.txt
-- https://vpnzhuanxian.github.io/uploads/2026/01/3-20260112.txt
-- https://vpnzhuanxian.github.io/uploads/2026/01/4-20260112.txt
+- https://vpnzhuanxian.github.io/uploads/2026/01/0-20260120.txt
+- https://vpnzhuanxian.github.io/uploads/2026/01/1-20260120.txt
+- https://vpnzhuanxian.github.io/uploads/2026/01/2-20260120.txt
+- https://vpnzhuanxian.github.io/uploads/2026/01/3-20260120.txt
+- https://vpnzhuanxian.github.io/uploads/2026/01/4-20260120.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnzhuanxian.github.io/uploads/2026/01/20260112.json
+- https://vpnzhuanxian.github.io/uploads/2026/01/20260120.json
 
 ## 更多Clash节点订阅 ：
 
