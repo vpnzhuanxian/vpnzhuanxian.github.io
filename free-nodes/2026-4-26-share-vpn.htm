@@ -299,14 +299,14 @@ opkg upgrade
         TUN 模式直接拦截 IP 层流量，不依赖应用代理设置，系统全局代理通常只影响支持 HTTP/HTTPS 的程序。TUN 更适合全局科学上网和游戏环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的证书配置错误会导致什么问题？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 的 JSON 配置文件常见语法错误如何快速定位？</h5></div>
     <div class="panel-body">
-        如果 TLS 证书无效或域名不匹配，Trojan 客户端将无法建立安全连接，导致节点无法使用。需要确保证书有效、域名正确，才能保证正常访问。<hr />    </div>
+        通过 JSON 校验工具或编辑器（例如 VSCode）打开配置文件，查看语法高亮与错误提示；也可运行 sing-box 并观察控制台错误信息，错误通常会指出第几行或哪个字段不合法以便修正。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 的 Flow 参数有什么作用？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 如何隐藏真实 IP？</h5></div>
     <div class="panel-body">
-        Flow 参数用于控制 VLESS 的传输模式，如 XTLS Vision 或 Reality 模式。它能影响性能、安全性与兼容性，需根据客户端支持情况正确匹配配置。<hr />    </div>
+        通过启用 TLS、Reality 或 WebSocket + CDN 转发，V2Ray 可有效隐藏真实服务器 IP。这样外部监测只能看到中转节点，从而提升匿名性与安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 能运行在哪些设备上？</h5></div>
@@ -319,19 +319,14 @@ opkg upgrade
         虽然 SSR 的开发早已停止，但由于它配置简单且部分节点仍然兼容，仍有一定使用场景。不过建议用户逐步迁移到更安全的新协议如 VLESS 或 Trojan，以获得更佳性能与隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的 JSON 配置文件常见语法错误如何快速定位？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
     <div class="panel-body">
-        通过 JSON 校验工具或编辑器（例如 VSCode）打开配置文件，查看语法高亮与错误提示；也可运行 sing-box 并观察控制台错误信息，错误通常会指出第几行或哪个字段不合法以便修正。<hr />    </div>
+        Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 如何隐藏真实 IP？</h5></div>
+    <div class="panel-heading"><h5>Trojan 的证书配置错误会导致什么问题？</h5></div>
     <div class="panel-body">
-        通过启用 TLS、Reality 或 WebSocket + CDN 转发，V2Ray 可有效隐藏真实服务器 IP。这样外部监测只能看到中转节点，从而提升匿名性与安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持 Vless？</h5></div>
-    <div class="panel-body">
-        目前 Potatso Lite 仅支持 Shadowsocks 和 Vmess 协议，不支持 Vless。但开发者正在逐步扩展功能，未来可能加入更多现代代理协议支持。<hr />    </div>
+        如果 TLS 证书无效或域名不匹配，Trojan 客户端将无法建立安全连接，导致节点无法使用。需要确保证书有效、域名正确，才能保证正常访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
@@ -339,9 +334,14 @@ opkg upgrade
         XTLS 降低加密开销，减少握手次数，适合高延迟或不稳定的移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
+    <div class="panel-heading"><h5>Potatso Lite 是否支持 Vless？</h5></div>
     <div class="panel-body">
-        Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。    </div>
+        目前 Potatso Lite 仅支持 Shadowsocks 和 Vmess 协议，不支持 Vless。但开发者正在逐步扩展功能，未来可能加入更多现代代理协议支持。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 的 Flow 参数有什么作用？</h5></div>
+    <div class="panel-body">
+        Flow 参数用于控制 VLESS 的传输模式，如 XTLS Vision 或 Reality 模式。它能影响性能、安全性与兼容性，需根据客户端支持情况正确匹配配置。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -373,16 +373,16 @@ opkg upgrade
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-19-mianfei-vpn.htm" title="VPN专线 | 3月19日22M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点免费节点机场分享">VPN专线 | 3月19日22M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-30-node-share-links.htm" title="VPN专线 | 3月30日19.5M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点免费节点机场分享">VPN专线 | 3月30日19.5M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-22-vpn-proxy.htm" title="VPN专线 | 3月22日18.6M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Clash节点免费节点机场分享">VPN专线 | 3月22日18.6M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Clash节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-24-share-vpn.htm" title="VPN专线 | 4月24日22.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点免费节点机场分享">VPN专线 | 4月24日22.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-8-top-vpn-node.htm" title="VPN专线 | 5月8日21.9M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点免费节点机场分享">VPN专线 | 5月8日21.9M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-top-vpn.htm" title="VPN专线 | 4月29日23M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点免费节点机场分享">VPN专线 | 4月29日23M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-vpn-github.htm" title="VPN专线 | 5月9日18M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点机场分享">VPN专线 | 5月9日18M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-top-vpn-node.htm" title="VPN专线 | 4月20日20.1M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点免费节点机场分享">VPN专线 | 4月20日20.1M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-10-top-vpn.htm" title="VPN专线 | 5月10日22M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点免费节点机场分享">VPN专线 | 5月10日22M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-top-vpn.htm" title="VPN专线 | 5月6日20.9M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点免费节点机场分享">VPN专线 | 5月6日20.9M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-28-vpn-github.htm" title="VPN专线 | 4月28日21.5M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点免费节点机场分享">VPN专线 | 4月28日21.5M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-23-vpn-node.htm" title="VPN专线 | 4月23日22M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点免费节点机场分享">VPN专线 | 4月23日22M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点免费节点机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-16-node-share-links.htm" title="VPN专线 | 4月16日19.3M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点免费节点机场分享">VPN专线 | 4月16日19.3M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/news/article-221601.htm" title="安卓用户必备：Clash节点配置与科学上网全攻略">安卓用户必备：Clash节点配置与科学上网全攻略</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-12-free-vpn.htm" title="VPN专线 | 4月12日20.7M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点免费节点机场分享">VPN专线 | 4月12日20.7M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-14-vpn-free.htm" title="VPN专线 | 3月14日18.5M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点免费节点机场分享">VPN专线 | 3月14日18.5M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-13-free-node-subscribe.htm" title="VPN专线 | 3月13日20.8M/S|免费Clash节点/Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点免费节点机场分享">VPN专线 | 3月13日20.8M/S|免费Clash节点/Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点免费节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-15-vpn-node.htm" title="VPN专线 | 3月15日20.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点免费节点机场分享">VPN专线 | 3月15日20.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点免费节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-node-share-links.htm" title="VPN专线 | 5月3日19.2M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点免费节点机场分享">VPN专线 | 5月3日19.2M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点免费节点机场分享</a></li>
                     </ul>
     </div>
 </div>
@@ -394,13 +394,10 @@ opkg upgrade
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
