@@ -296,29 +296,9 @@ Kitsunebi是一款轻量级的V2Ray客户端，注重网络优化和用户隐私
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名配置需要注意什么？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 如何处理域名直连与代理的冲突？</h5></div>
     <div class="panel-body">
-        伪装域名必须真实可访问并有有效证书，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁风险，保证节点长期稳定可用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
-    <div class="panel-body">
-        SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的 Proxy Group 能实现哪些策略？</h5></div>
-    <div class="panel-body">
-        Proxy Group 可以定义多种策略，如按延迟选择、随机、轮询或手动选择节点。结合分流规则，可实现针对不同网站或应用的智能代理，提高网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的策略组如何提升分流效率？</h5></div>
-    <div class="panel-body">
-        策略组可以将多个节点或规则组合在一起，实现按条件自动选择最佳节点。通过策略组，用户无需手动切换节点即可根据延迟、地理位置或流量类型自动分流，提高网络效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 协议的安全性如何？</h5></div>
-    <div class="panel-body">
-        Trojan 使用与 HTTPS 类似的 TLS 加密通道，使其数据流难以与普通网页访问区分。它兼具隐蔽性与安全性，几乎无法被防火墙检测。Trojan 协议的主要优势在于稳定、安全、兼容性强，因此广受高级用户青睐。<hr />    </div>
+        在 Shadowrocket 的规则管理中优先设置具体规则（如 DOMAIN-KEYWORD 或 DOMAIN-SUFFIX），将直连规则放在规则列表靠前位置，避免被泛用的代理规则覆盖，从而确保特定域名走直连。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的规则订阅更新有哪些注意事项？</h5></div>
@@ -326,9 +306,34 @@ Kitsunebi是一款轻量级的V2Ray客户端，注重网络优化和用户隐私
         Clash 订阅更新需保证网络畅通，规则文件格式正确，并与客户端版本兼容。建议定期更新规则以获得最新节点和分流规则，同时注意避免频繁刷新造成性能问题。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 的伪装域名配置需要注意什么？</h5></div>
+    <div class="panel-body">
+        伪装域名必须真实可访问并有有效证书，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁风险，保证节点长期稳定可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 手动节点选择有什么好处？</h5></div>
+    <div class="panel-body">
+        手动选择节点可以让用户根据网络延迟和需求选择最优节点。适合节点不稳定或特定访问需求，灵活调整流量走向，提高访问速度和网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的策略组如何提升分流效率？</h5></div>
+    <div class="panel-body">
+        策略组可以将多个节点或规则组合在一起，实现按条件自动选择最佳节点。通过策略组，用户无需手动切换节点即可根据延迟、地理位置或流量类型自动分流，提高网络效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的 Proxy Group 能实现哪些策略？</h5></div>
+    <div class="panel-body">
+        Proxy Group 可以定义多种策略，如按延迟选择、随机、轮询或手动选择节点。结合分流规则，可实现针对不同网站或应用的智能代理，提高网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何实现智能分流？</h5></div>
     <div class="panel-body">
         PassWall2 通过自定义规则文件控制流量走向。可根据目标域名、国家或 IP 范围自动判断走代理或直连。用户还能加载社区规则，实现类似 Clash 的高效路由分流。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
+    <div class="panel-body">
+        SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何结合延迟选择最优节点？</h5></div>
@@ -336,14 +341,9 @@ Kitsunebi是一款轻量级的V2Ray客户端，注重网络优化和用户隐私
         PassWall2 定期测速节点延迟，并结合策略组自动选择延迟最低的节点。无需手动操作即可保证网页、视频和游戏流量快速稳定访问，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 如何处理域名直连与代理的冲突？</h5></div>
+    <div class="panel-heading"><h5>Trojan 协议的安全性如何？</h5></div>
     <div class="panel-body">
-        在 Shadowrocket 的规则管理中优先设置具体规则（如 DOMAIN-KEYWORD 或 DOMAIN-SUFFIX），将直连规则放在规则列表靠前位置，避免被泛用的代理规则覆盖，从而确保特定域名走直连。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 手动节点选择有什么好处？</h5></div>
-    <div class="panel-body">
-        手动选择节点可以让用户根据网络延迟和需求选择最优节点。适合节点不稳定或特定访问需求，灵活调整流量走向，提高访问速度和网络体验。    </div>
+        Trojan 使用与 HTTPS 类似的 TLS 加密通道，使其数据流难以与普通网页访问区分。它兼具隐蔽性与安全性，几乎无法被防火墙检测。Trojan 协议的主要优势在于稳定、安全、兼容性强，因此广受高级用户青睐。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -396,16 +396,16 @@ Kitsunebi是一款轻量级的V2Ray客户端，注重网络优化和用户隐私
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-28-vpn-github.htm" title="VPN专线 | 5月28日19.5M/S|免费SSR节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点免费节点机场分享">VPN专线 | 5月28日19.5M/S|免费SSR节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-9-vpn-github.htm" title="VPN专线 | 5月9日18M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点机场分享">VPN专线 | 5月9日18M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-26-free-node-subscribe-links.htm" title="VPN专线 | 5月26日20.7M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点免费节点机场分享">VPN专线 | 5月26日20.7M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-vpn-github.htm" title="VPN专线 | 4月13日20.1M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点免费节点机场分享">VPN专线 | 4月13日20.1M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-8-top-vpn-node.htm" title="VPN专线 | 5月8日21.9M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点免费节点机场分享">VPN专线 | 5月8日21.9M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-24-vpn-proxy.htm" title="VPN专线 | 5月24日21.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点免费节点机场分享">VPN专线 | 5月24日21.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-12-free-vpn.htm" title="VPN专线 | 4月12日20.7M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点免费节点机场分享">VPN专线 | 4月12日20.7M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-30-top-vpn-node.htm" title="VPN专线 | 4月30日21.8M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点免费节点机场分享">VPN专线 | 4月30日21.8M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-19-mianfei-vpn.htm" title="VPN专线 | 5月19日22.5M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点免费节点机场分享">VPN专线 | 5月19日22.5M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-23-node-share-links.htm" title="VPN专线 | 5月23日22M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点免费节点机场分享">VPN专线 | 5月23日22M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点免费节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-5-vpn-node.htm" title="VPN专线 | 5月5日19.7M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点免费节点机场分享">VPN专线 | 5月5日19.7M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-18-vpn-proxy.htm" title="VPN专线 | 5月18日21M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点免费节点机场分享">VPN专线 | 5月18日21M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-26-free-node-subscribe-links.htm" title="VPN专线 | 5月26日20.7M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点免费节点机场分享">VPN专线 | 5月26日20.7M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-16-free-vpn.htm" title="VPN专线 | 5月16日21.8M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点免费节点机场分享">VPN专线 | 5月16日21.8M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-vpn-proxy.htm" title="VPN专线 | 5月7日20.9M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点免费节点机场分享">VPN专线 | 5月7日20.9M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-1-free-vpn.htm" title="VPN专线 | 6月1日19.7M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点免费节点机场分享">VPN专线 | 6月1日19.7M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-12-node-share-links.htm" title="VPN专线 | 5月12日18.7M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点免费节点机场分享">VPN专线 | 5月12日18.7M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-top-vpn.htm" title="VPN专线 | 5月6日20.9M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点免费节点机场分享">VPN专线 | 5月6日20.9M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-vpn-github.htm" title="VPN专线 | 5月9日18M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点机场分享">VPN专线 | 5月9日18M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -417,10 +417,10 @@ Kitsunebi是一款轻量级的V2Ray客户端，注重网络优化和用户隐私
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                     </ul>
     </div>
