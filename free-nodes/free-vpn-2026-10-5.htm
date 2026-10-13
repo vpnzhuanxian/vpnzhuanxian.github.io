@@ -364,12 +364,13 @@ Windows/macOS电脑、Android/iOS手机或电视盒子均可。</p>
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-10-4-vpn-node.htm">VPN专线 | 10月4日19.8M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点免费节点机场分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-10-6-free-node-subscribe.htm">VPN专线 | 10月6日20.1M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点免费节点机场分享</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的协议和混淆组合如何选择最适合的？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下的优势是什么？</h5></div>
     <div class="panel-body">
-        选择模拟 HTTPS 或 HTTP 的混淆方式，再搭配 AEAD 或协议插件，可以隐藏流量特征并提高抗封锁能力。不同网络环境需测试，选择最稳定和可靠的组合。<hr />    </div>
+        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多出口节点使用，可提高访问速度和连接稳定性，保证用户体验流畅可靠。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 如何设置分流规则？</h5></div>
@@ -377,9 +378,9 @@ Windows/macOS电脑、Android/iOS手机或电视盒子均可。</p>
         Nekobox 提供图形化规则编辑界面，可基于 IP、域名、地区等条件创建分流规则。例如可设置国内直连、国外代理、特定网站走特定节点，操作直观。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下的优势是什么？</h5></div>
+    <div class="panel-heading"><h5>VMess 配置 TLS+WebSocket 有哪些性能优势？</h5></div>
     <div class="panel-body">
-        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多出口节点使用，可提高访问速度和连接稳定性，保证用户体验流畅可靠。<hr />    </div>
+        TLS+WebSocket 可伪装 HTTPS 流量，增强抗封锁能力，同时降低被封检测风险。结合策略组和节点延迟检测，可保证访问速度和连接稳定性，适合视频和游戏场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 在丢包环境下如何配置更稳？</h5></div>
@@ -387,24 +388,9 @@ Windows/macOS电脑、Android/iOS手机或电视盒子均可。</p>
         可调整 Hysteria2 的拥塞控制与重传参数，启用 FEC（前向纠错）并合理设置 MTU 与窗口大小以适应链路特性。还可尝试切换 QUIC 参数或更换中转以减少丢包影响。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 配置 TLS+WebSocket 有哪些性能优势？</h5></div>
-    <div class="panel-body">
-        TLS+WebSocket 可伪装 HTTPS 流量，增强抗封锁能力，同时降低被封检测风险。结合策略组和节点延迟检测，可保证访问速度和连接稳定性，适合视频和游戏场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在封锁严格地区的作用？</h5></div>
-    <div class="panel-body">
-        AEAD 加密防止数据篡改和流量特征泄露，降低被封锁和 DPI 检测风险。保证节点长期可用，提高数据传输安全性和访问可靠性，优化用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 是否支持手动节点管理？</h5></div>
     <div class="panel-body">
         支持。用户可手动输入节点信息或扫描二维码导入节点，并可进行修改或删除。虽然不支持自动订阅更新，但足以满足轻量用户对节点管理和流量分流的需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 是否支持多客户端节点管理？</h5></div>
-    <div class="panel-body">
-        支持。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。用户可通过策略组灵活管理节点，实现多客户端分流和网络优化。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的 UDP 转发功能需要注意什么？</h5></div>
@@ -412,9 +398,24 @@ Windows/macOS电脑、Android/iOS手机或电视盒子均可。</p>
         SSR 的 UDP 转发需要服务端和客户端同时开启，同时确保服务器防火墙允许 UDP 通信。UDP 流量不可靠，可能在高丢包网络中导致连接中断，需要测试稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 是否支持多客户端节点管理？</h5></div>
+    <div class="panel-body">
+        支持。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。用户可通过策略组灵活管理节点，实现多客户端分流和网络优化。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密在封锁严格地区的作用？</h5></div>
+    <div class="panel-body">
+        AEAD 加密防止数据篡改和流量特征泄露，降低被封锁和 DPI 检测风险。保证节点长期可用，提高数据传输安全性和访问可靠性，优化用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 如何在 Windows 上加速游戏？</h5></div>
     <div class="panel-body">
-        Netch 使用 TUN/TAP 模式将特定进程流量通过代理转发，常用于游戏加速。用户只需将游戏进程添加到列表，选择合适的代理节点，即可降低延迟并绕过地理限制。    </div>
+        Netch 使用 TUN/TAP 模式将特定进程流量通过代理转发，常用于游戏加速。用户只需将游戏进程添加到列表，选择合适的代理节点，即可降低延迟并绕过地理限制。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的协议和混淆组合如何选择最适合的？</h5></div>
+    <div class="panel-body">
+        选择模拟 HTTPS 或 HTTP 的混淆方式，再搭配 AEAD 或协议插件，可以隐藏流量特征并提高抗封锁能力。不同网络环境需测试，选择最稳定和可靠的组合。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -465,16 +466,16 @@ Windows/macOS电脑、Android/iOS手机或电视盒子均可。</p>
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-7.htm" title="VPN专线 | 9月7日22.1M/S|免费V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点免费节点机场分享">VPN专线 | 9月7日22.1M/S|免费V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-vpn-free.htm" title="VPN专线 | 9月28日19M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点免费节点机场分享">VPN专线 | 9月28日19M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-19.htm" title="VPN专线 | 9月19日18.2M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点免费节点机场分享">VPN专线 | 9月19日18.2M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-9-13.htm" title="VPN专线 | 9月13日20.6M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点免费节点机场分享">VPN专线 | 9月13日20.6M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-15.htm" title="VPN专线 | 9月15日22.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点免费节点机场分享">VPN专线 | 9月15日22.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-10-5.htm" title="VPN专线 | 10月5日22.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点免费节点机场分享">VPN专线 | 10月5日22.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-5.htm" title="VPN专线 | 9月5日20.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点免费节点机场分享">VPN专线 | 9月5日20.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-vpn-node.htm" title="VPN专线 | 10月2日21.9M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点免费节点机场分享">VPN专线 | 10月2日21.9M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-6-free-node-subscribe.htm" title="VPN专线 | 10月6日20.1M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点免费节点机场分享">VPN专线 | 10月6日20.1M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-vpn-free.htm" title="VPN专线 | 9月12日19.2M/S|免费V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点免费节点机场分享">VPN专线 | 9月12日19.2M/S|免费V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-top-vpn-node.htm" title="VPN专线 | 9月2日21.3M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点免费节点机场分享">VPN专线 | 9月2日21.3M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-10-11.htm" title="VPN专线 | 10月11日20.6M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点免费节点机场分享">VPN专线 | 10月11日20.6M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点免费节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/share-vpn-2026-9-9.htm" title="VPN专线 | 9月9日19.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点免费节点机场分享">VPN专线 | 9月9日19.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点免费节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-16-vpn-node.htm" title="VPN专线 | 9月16日19.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点免费节点机场分享">VPN专线 | 9月16日19.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-27.htm" title="VPN专线 | 9月27日22.2M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点免费节点机场分享">VPN专线 | 9月27日22.2M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-10-5.htm" title="VPN专线 | 10月5日22.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点免费节点机场分享">VPN专线 | 10月5日22.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-vpn-node.htm" title="VPN专线 | 10月2日21.9M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点免费节点机场分享">VPN专线 | 10月2日21.9M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-vpn-proxy.htm" title="VPN专线 | 9月14日19.2M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点免费节点机场分享">VPN专线 | 9月14日19.2M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点免费节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-15.htm" title="VPN专线 | 9月15日22.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点免费节点机场分享">VPN专线 | 9月15日22.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点免费节点机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -486,7 +487,7 @@ Windows/macOS电脑、Android/iOS手机或电视盒子均可。</p>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">5</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">12</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
